@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/bin/node',
+1 verbose cli   '/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--ignore-scripts',
+1 verbose cli   'package1-1.1.0.tgz' ]
+2 info using npm@3.9.3
+3 info using node@v6.2.1
+4 verbose publish [ 'package1-1.1.0.tgz' ]
+5 silly cache add args [ 'package1-1.1.0.tgz', null ]
+6 verbose cache add spec package1-1.1.0.tgz
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: 'package1-1.1.0.tgz',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: 'package1-1.1.0.tgz',
+7 silly cache add   spec: '/Users/phanirajgouthamkotcharlakota/softwares/my-first-leana/packages/package1/package1-1.1.0.tgz',
+7 silly cache add   type: 'local' }
+8 silly addLocalTarball shasum (computed) cbdbbdd268d556b9f345c8095723813753906242
+9 verbose addTmpTarball /Users/phanirajgouthamkotcharlakota/softwares/my-first-leana/packages/package1/package1-1.1.0.tgz not in flight; adding
+10 verbose correctMkdir /Users/phanirajgouthamkotcharlakota/.npm correctMkdir not in flight; initializing
+11 verbose addTmpTarball validating metadata from /Users/phanirajgouthamkotcharlakota/softwares/my-first-leana/packages/package1/package1-1.1.0.tgz
+12 verbose tar unpack /Users/phanirajgouthamkotcharlakota/softwares/my-first-leana/packages/package1/package1-1.1.0.tgz
+13 verbose tar unpacking to /var/folders/bz/42p3n_fs7dv184g7vj7z0p1w0000gn/T/npm-81664-e00edb6e/unpack-c7b6b8ce
+14 silly gentlyRm /var/folders/bz/42p3n_fs7dv184g7vj7z0p1w0000gn/T/npm-81664-e00edb6e/unpack-c7b6b8ce is being purged
+15 verbose gentlyRm don't care about contents; nuking /var/folders/bz/42p3n_fs7dv184g7vj7z0p1w0000gn/T/npm-81664-e00edb6e/unpack-c7b6b8ce
+16 silly gunzTarPerm modes [ '755', '644' ]
+17 silly gunzTarPerm extractEntry package.json
+18 silly gunzTarPerm extractEntry index.js
+19 verbose correctMkdir /Users/phanirajgouthamkotcharlakota/.npm correctMkdir not in flight; initializing
+20 silly cache afterAdd package1@1.1.0
+21 verbose afterAdd /Users/phanirajgouthamkotcharlakota/.npm/package1/1.1.0/package/package.json not in flight; writing
+22 verbose correctMkdir /Users/phanirajgouthamkotcharlakota/.npm correctMkdir not in flight; initializing
+23 verbose afterAdd /Users/phanirajgouthamkotcharlakota/.npm/package1/1.1.0/package/package.json written
+24 silly publish { name: 'package1',
+24 silly publish   version: '1.1.0',
+24 silly publish   description: 'This is the first node-module written by phanirajgoutham',
+24 silly publish   main: 'index.js',
+24 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+24 silly publish   keywords: [ 'phani' ],
+24 silly publish   author: { name: 'phanirajgoutham@gmail.com' },
+24 silly publish   license: 'ISC',
+24 silly publish   gitHead: '45e3992ecb0f54d3085a85cf6e6128d1852de260',
+24 silly publish   readme: 'ERROR: No README data found!',
+24 silly publish   _id: 'package1@1.1.0',
+24 silly publish   _shasum: 'cbdbbdd268d556b9f345c8095723813753906242',
+24 silly publish   _resolved: 'file:package1-1.1.0.tgz',
+24 silly publish   _from: 'package1-1.1.0.tgz' }
+25 info lifecycle package1@1.1.0~prepublish: package1@1.1.0
+26 info lifecycle package1@1.1.0~prepublish: ignored because ignore-scripts is set to true package1@1.1.0
+27 silly lifecycle package1@1.1.0~prepublish: no script for prepublish, continuing
+28 verbose getPublishConfig undefined
+29 silly mapToRegistry name package1
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'package1',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'package1',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/package1
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/phanirajgouthamkotcharlakota/.npm/package1/1.1.0/package.tgz
+36 verbose request uri https://registry.npmjs.org/package1
+37 verbose request sending authorization for write operation
+38 info attempt registry request try #1 at 5:58:16 PM
+39 verbose request using bearer token for auth
+40 verbose request id afc38c05ddd8a06f
+41 http request PUT https://registry.npmjs.org/package1
+42 http 403 https://registry.npmjs.org/package1
+43 verbose headers { date: 'Thu, 20 Sep 2018 12:28:17 GMT',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'transfer-encoding': 'chunked',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'set-cookie': [ '__cfduid=d4ecc44f0633144f6d43619641bdcf2001537446496; expires=Fri, 20-Sep-19 12:28:16 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+43 verbose headers   'cf-ray': '45d44a7b7c478a91-BOM',
+43 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+43 verbose headers   vary: 'Accept-Encoding',
+43 verbose headers   server: 'cloudflare',
+43 verbose headers   'content-encoding': 'gzip' }
+44 verbose request invalidating /Users/phanirajgouthamkotcharlakota/.npm/registry.npmjs.org/package1 on PUT
+45 error publish Failed PUT 403
+46 verbose stack Error: You do not have permission to publish "package1". Are you logged in as the correct user? : package1
+46 verbose stack     at makeError (/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+46 verbose stack     at /Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:7
+46 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+46 verbose stack     at emitNone (events.js:91:20)
+46 verbose stack     at Gunzip.emit (events.js:185:7)
+46 verbose stack     at endReadableNT (_stream_readable.js:926:12)
+46 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+46 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+47 verbose statusCode 403
+48 verbose pkgid package1
+49 verbose cwd /Users/phanirajgouthamkotcharlakota/softwares/my-first-leana/packages/package1
+50 error Darwin 17.5.0
+51 error argv "/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/bin/node" "/Users/phanirajgouthamkotcharlakota/.nvm/versions/node/v6.2.1/bin/npm" "publish" "--ignore-scripts" "package1-1.1.0.tgz"
+52 error node v6.2.1
+53 error npm  v3.9.3
+54 error code E403
+55 error You do not have permission to publish "package1". Are you logged in as the correct user? : package1
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
