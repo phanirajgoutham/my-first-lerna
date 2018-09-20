@@ -1,1 +1,1 @@
-exports.print() = function () { console.log("First module"); }
+exports.print() = function () { console.log("First module updated"); }
